@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AppSWH</string>
+    <string name="BatInfo">YOU CAN DO BOTH BAT KNOCKING AND OILING BUT THE BAT WILL STAY WITH US IN THE STOR FOR 48 HOURS</string>
+    <string name="StringingInfo">AND REMEMBER THE PRICE OF THE STRINGS DIFFER DUE TO THEIR BRAND AND QUALITY</string>
+    <string name="price_list">PRICE LIST</string>
+    <string name="confirm">Confirm</string>
+    <string name="both_services">BOTH SERVICES R250.00</string>
+    <string name="a_long_lasting_service">A LONG LASTING SERVICE</string>
+</resources>
