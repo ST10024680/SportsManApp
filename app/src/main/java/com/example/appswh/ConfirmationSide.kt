@@ -31,16 +31,16 @@ class ConfirmationSide : AppCompatActivity() {
             // Fetch entries from the database and display them
             val entries = dbHelper.getAllData()
             if (entries.isNotEmpty()) {
-                display(entries)
+                Toast.makeText(
+                    this,
+                    "You have placed an appointment for your item to be serviced at Sportsman's Warehouse",
+                    Toast.LENGTH_SHORT
+                ).show()
             } else {
                 textViewConfirm.text = "No entries found."
             }
 
-            Toast.makeText(
-                this,
-                "You have placed an appointment for your item to be serviced at Sportsman's Warehouse",
-                Toast.LENGTH_SHORT
-            ).show()
+
         }
 
         btnback.setOnClickListener {
@@ -49,11 +49,5 @@ class ConfirmationSide : AppCompatActivity() {
         }
     }
 
-    private fun display(entries: List<String>) {
-        val stringBuilder = StringBuilder()
-        for (entry in entries) {
-            stringBuilder.append(entry).append("\n\n") // Adds space between entries
-        }
-        textViewConfirm.text = stringBuilder.toString()
-    }
+
 }
