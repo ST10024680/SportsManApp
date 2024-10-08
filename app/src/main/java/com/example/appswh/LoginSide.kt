@@ -8,10 +8,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
 class LoginSide : AppCompatActivity() {
 
@@ -20,7 +17,6 @@ class LoginSide : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContentView(R.layout.activity_login_side)
 
         // Initialize SQLiteHelper and UI elements
@@ -33,15 +29,15 @@ class LoginSide : AppCompatActivity() {
 
         btnSaveLogin.setOnClickListener {
 
-            val email = textViewLoginEmail.text.toString()
-            val password = editLoginPassword.text.toString()
+            val email = textViewLoginEmail.text.toString().trim()
+            val password = editLoginPassword.text.toString().trim()
 
             // Simple validation
             if (email.isEmpty() || password.isEmpty()) {
                 Toast.makeText(this, "Please fill out all fields", Toast.LENGTH_SHORT).show()
             } else {
+                // Perform the login check in the database
                 loginDatabase(email, password)
-
             }
         }
 
@@ -49,17 +45,17 @@ class LoginSide : AppCompatActivity() {
             startActivity(Intent(this, RegisterSide::class.java))
         }
     }
-    private fun loginDatabase(username: String, userPassword: String){
-        val userExits = dbHelper.checkUser(username, userPassword)
-        if (userExits){
+
+    private fun loginDatabase(username: String, userPassword: String) {
+        val userExists = dbHelper.checkUser(username, userPassword)
+        if (userExists) {
             Toast.makeText(this, "Login successful", Toast.LENGTH_SHORT).show()
 
-            // Switching to booking activity
-            val intent = Intent(this,BookingSide::class.java)
+            // Switching to booking activity after successful login
+            val intent = Intent(this, BookingSide::class.java)
             startActivity(intent)
-        }else{
+        } else {
             Toast.makeText(this, "Login Failed", Toast.LENGTH_SHORT).show()
         }
     }
-
 }

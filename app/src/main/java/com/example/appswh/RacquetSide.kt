@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -26,11 +27,17 @@ class RacquetSide : AppCompatActivity() {
 
         btnRacquetConfirm.setOnClickListener {
             val services = "RACQUET"
-            dbHelper.addData(services)
-            // Switching to booking activity
-            val intent = Intent(this,ConfirmationSide::class.java)
-            startActivity(intent)
+            val success = dbHelper.addData(services)
 
+            if (success) {
+                Toast.makeText(this, "Racquet service added successfully!", Toast.LENGTH_SHORT).show()
+
+                // Switching to confirmation activity
+                val intent = Intent(this, ConfirmationSide::class.java)
+                startActivity(intent)
+            } else {
+                Toast.makeText(this, "Failed to add racquet service", Toast.LENGTH_SHORT).show()
+            }
         }
     }
 }
