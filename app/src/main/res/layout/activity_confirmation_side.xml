@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -8,98 +9,94 @@
     android:background="#15BBE4"
     tools:context=".ConfirmationSide">
 
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="400dp"
-        android:layout_height="400dp"
-        android:layout_marginTop="90dp"
+    <!-- Logo Image -->
+<ImageView
+android:id="@+id/imageView7"
+android:layout_width="250dp"
+android:layout_height="250dp"
+android:layout_marginTop="50dp"
+android:layout_marginBottom="20dp"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toTopOf="parent"
+app:srcCompat="@drawable/sportsmas_warehouse_logo" />
 
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/sportsmas_warehouse_logo" />
+    <!-- Confirmation Title -->
+<TextView
+android:id="@+id/textView34"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="CONFIRM BOOKING"
+android:textAlignment="center"
+android:textColor="@android:color/white"
+android:textSize="22sp"
+android:textStyle="bold"
+app:layout_constraintTop_toBottomOf="@id/imageView7"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintEnd_toEndOf="parent" />
 
-    <TextView
-        android:id="@+id/textView34"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:text="CONFIRM BOOKING"
-        android:textAlignment="center"
-        android:textColor="#100F0F"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.05" />
+    <!-- Main Confirmation Button -->
+<Button
+android:id="@+id/btnClickConfirm"
+android:layout_width="300dp"
+android:layout_height="wrap_content"
+android:text="CONFIRM YOUR BOOKING"
+android:textAlignment="center"
+android:textStyle="bold"
+android:textColor="@android:color/white"
+android:backgroundTint="#007BFF"
+    android:padding="12dp"
+    android:layout_marginTop="30dp"
+    app:cornerRadius="24dp"
+    app:layout_constraintTop_toBottomOf="@id/textView34"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent" />
 
-    <Button
-        android:id="@+id/btnClickConfirm"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:text="CONFIRM\nYOUR BOOKING\nBY\nCLICKING HERE"
-        android:textAlignment="center"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.762" />
+    <!-- Return Button -->
+<Button
+android:id="@+id/btnback"
+android:layout_width="300dp"
+android:layout_height="wrap_content"
+android:text="RETURN"
+android:textAlignment="center"
+android:textStyle="bold"
+android:textColor="@android:color/white"
+android:backgroundTint="#555555"
+    android:padding="12dp"
+    android:layout_marginTop="20dp"
+    app:cornerRadius="24dp"
+    app:layout_constraintTop_toBottomOf="@id/btnClickConfirm"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent" />
 
-    <Button
-        android:id="@+id/btnback"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:text="RETURN"
-        android:textAlignment="center"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.866" />
+    <!-- Thank You Message -->
+<TextView
+android:id="@+id/textView35"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="THANK YOU FOR REQUESTING OUR SERVICE"
+android:textAlignment="center"
+android:textColor="@android:color/white"
+android:textSize="16sp"
+android:textStyle="bold|italic"
+android:layout_marginTop="30dp"
+app:layout_constraintTop_toBottomOf="@id/btnback"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintEnd_toEndOf="parent" />
 
-    <TextView
-        android:id="@+id/textView35"
-        android:layout_width="400dp"
-        android:layout_height="wrap_content"
-        android:text="THANK YOU FOR REQUESTING AN ITEM SERVICE WITH US"
-        android:textAlignment="center"
-        android:textColor="#FB0808"
-        android:textSize="16sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.09"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.95" />
+    <!-- Footer Text -->
+<TextView
+android:id="@+id/textView36"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="A LONG LASTING SERVICE"
+android:textColor="#E0E0E0"
+android:textSize="14sp"
+android:textStyle="italic"
+app:layout_constraintTop_toBottomOf="@id/textView35"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintVertical_bias="0.95" />
 
-    <TextView
-        android:id="@+id/textView36"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="A LONG LASTING SERVICE"
-        android:textColor="#F3EDED"
-        android:textStyle="bold|italic"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.994" />
-
-    <TextView
-        android:id="@+id/textViewConfirm"
-        android:layout_width="391dp"
-        android:layout_height="390dp"
-        android:text=""
-        
-        tools:layout_editor_absoluteX="10dp"
-        tools:layout_editor_absoluteY="94dp" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>

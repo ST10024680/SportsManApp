@@ -5,27 +5,27 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#15BBE4"
     tools:context=".BothSideActivity">
 
     <TextView
         android:id="@+id/textView22"
-        android:layout_width="200dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="BAT KNOCKING AND RACQUET RESTRINGING"
         android:textAlignment="center"
         android:textColor="#0C0C0C"
-        android:textSize="16sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.022" />
 
     <TextView
         android:id="@+id/textView20"
-        android:layout_width="400dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Racquet restringing is the process of replacing the strings on a tennis, badminton, or squash racquet. Over time, racquet strings can lose tension, break, or wear out due to regular use, impacting the performance of the racquet. Restringing involves removing the old strings and installing new ones, allowing players to maintain optimal control, power, and comfort in their game."
         android:textAlignment="center"
@@ -35,14 +35,18 @@
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.421" />
+        app:layout_constraintVertical_bias="0.421"
+        android:padding="16dp"
+        android:layout_margin="8dp"/>
+
     <TextView
         android:id="@+id/textView23"
-        android:layout_width="400dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:padding="16dp"
         android:text="Bat knocking is the process of compressing the fibers of a cricket bat's willow to make it harder and more resilient. This is typically done using a specialized bat mallet or an old cricket ball. The goal is to prevent the bat from cracking or splitting when it is used to hit a cricket ball."
         android:textAlignment="center"
         android:textAllCaps="true"
@@ -51,15 +55,17 @@
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.346" />
+        app:layout_constraintVertical_bias="0.096" />
 
     <TextView
         android:id="@+id/textView21"
-        android:layout_width="200dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:padding="16dp"
         android:text="@string/a_long_lasting_service"
         android:textColor="#FBF6F6"
         android:textSize="16sp"
@@ -69,7 +75,7 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.977" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/btnConfirm"
@@ -78,35 +84,34 @@
         android:text="@string/confirm"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.929" />
+        app:layout_constraintVertical_bias="0.929"
+        android:contentDescription="Confirm button" />
 
     <TextView
-        android:id="@+id/textView26"
-        android:layout_width="200dp"
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/price_list"
+        android:layout_marginTop="16dp"
+        android:text="PRICE LIST"
         android:textAlignment="center"
-        android:textColor="#EF0404"
+        android:textColor="#EC0B0B"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.603" />
 
     <TextView
-        android:id="@+id/textView27"
-        android:layout_width="400dp"
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:text="@string/both_services"
         android:textAlignment="center"
-        android:textAllCaps="false"
-        android:textColor="#121010"
-        android:textSize="16sp"
+        android:textColor="#171212"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -115,51 +120,39 @@
         app:layout_constraintVertical_bias="0.653" />
 
     <TextView
-        android:id="@+id/textView28"
-        android:layout_width="400dp"
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:text="BAT OILING AND GRIP REPLACEMENT IS FOR FREE ONLY IF YOU BOUGHT THE GRIP AND THE OIL IN OUR STORE OR ANY OTHER SPORTSMANS WAREHOUSE STORE"
         android:textAlignment="center"
-        android:textAllCaps="false"
-        android:textColor="#121010"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.751" />
-
-    <TextView
-        android:id="@+id/textView29"
-        android:layout_width="400dp"
-        android:layout_height="wrap_content"
-        android:text="@string/StringingInfo"
-        android:textAlignment="center"
-        android:textAllCaps="false"
-        android:textColor="#121010"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.454"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.842" />
-    <TextView
-        android:id="@+id/textView33"
-        android:layout_width="400dp"
-        android:layout_height="wrap_content"
-        android:text="@string/BatInfo"
-        android:textAlignment="center"
-        android:textAllCaps="true"
         android:textColor="#171212"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.848" />
+        app:layout_constraintVertical_bias="0.751"
+        android:padding="16dp"
+        android:layout_margin="8dp"/>
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginTop="8dp"
+        android:padding="16dp"
+        android:text="@string/StringingInfo"
+        android:textAlignment="center"
+        android:textColor="#171212"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.851" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

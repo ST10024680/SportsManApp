@@ -13,50 +13,46 @@
         android:layout_width="200dp"
         android:layout_height="150dp"
         android:layout_marginTop="48dp"
-
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/bat" />
 
     <TextView
         android:id="@+id/textView22"
-        android:layout_width="200dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:text="BAT KNOCKING"
         android:textAlignment="center"
         android:textColor="#0C0C0C"
-        android:textSize="16sp"
+        android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.022" />
+        app:layout_constraintTop_toBottomOf="@id/imageView6" />
 
     <TextView
         android:id="@+id/textView23"
-        android:layout_width="400dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Bat knocking is the process of compressing the fibers of a cricket bat's willow to make it harder and more resilient. This is typically done using a specialized bat mallet or an old cricket ball. The goal is to prevent the bat from cracking or splitting when it is used to hit a cricket ball."
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="16dp"
+        android:text="Bat knocking is the process of compressing the fibers of a cricket bat's willow to make it harder and more resilient."
         android:textAlignment="center"
-        android:textAllCaps="true"
         android:textColor="#0C0C0C"
         android:textSize="16sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textStyle="italic"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.346" />
+        app:layout_constraintTop_toBottomOf="@id/textView22" />
 
     <TextView
         android:id="@+id/textView24"
-        android:layout_width="200dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:text="A LONG LASTING SERVICE"
         android:textAlignment="center"
         android:textColor="#F6EFEF"
@@ -64,100 +60,87 @@
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.977" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView25"
-        android:layout_width="400dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Bat oiling involves applying raw linseed oil to the surface of the bat to maintain its moisture content and prevent the willow from drying out and becoming brittle."
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
+        android:text="Bat oiling involves applying raw linseed oil to the surface of the bat to maintain its moisture."
         android:textAlignment="center"
-        android:textAllCaps="true"
         android:textColor="#0C0C0C"
         android:textSize="16sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textStyle="italic"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.539" />
+        app:layout_constraintTop_toBottomOf="@id/textView23" />
 
     <TextView
         android:id="@+id/textView30"
-        android:layout_width="300dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:text="PRICE LIST"
         android:textAlignment="center"
         android:textColor="#EC0B0B"
         android:textStyle="bold|italic"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.619" />
+        app:layout_constraintTop_toBottomOf="@id/textView25" />
 
     <TextView
         android:id="@+id/textView31"
-        android:layout_width="400dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:text="BAT KNOCKING              R100.00\nNB: 'IT MUST BE AN ENGLISH WILLOW'"
         android:textAlignment="center"
-        android:textAllCaps="true"
         android:textColor="#171212"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.677" />
+        app:layout_constraintTop_toBottomOf="@id/textView30" />
 
     <TextView
         android:id="@+id/textView32"
-        android:layout_width="400dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="BAT OILING IT IS FOR FREE ONLY WHEN YOU BOUGHT THE OIL IN OUR STORE OR ANY OTHER SPORTSMANS WAREHOUSE STORE"
+        android:layout_marginTop="8dp"
+        android:text="BAT OILING IS FREE WHEN YOU BUY OIL FROM OUR STORE"
         android:textAlignment="center"
-        android:textAllCaps="true"
         android:textColor="#171212"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.764" />
+        app:layout_constraintTop_toBottomOf="@id/textView31" />
 
     <TextView
         android:id="@+id/textView33"
-        android:layout_width="400dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="YOU CAN DO BOTH BAT KNOCKING AND OILING BUT THE BAT WILL STAY WITH US IN THE STOR FOR 48 HOURS"
+        android:layout_marginTop="8dp"
+        android:text="BAT KNOCKING + OILING REQUIRES 48 HOURS"
         android:textAlignment="center"
-        android:textAllCaps="true"
         android:textColor="#171212"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.848" />
+        app:layout_constraintTop_toBottomOf="@id/textView32" />
 
     <Button
         android:id="@+id/btnBatConfirm"
         android:layout_width="300dp"
         android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#007BFF"
         android:text="SAVE"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textStyle="bold"
+        app:cornerRadius="24dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.927" />
+        app:layout_constraintTop_toBottomOf="@id/textView33" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

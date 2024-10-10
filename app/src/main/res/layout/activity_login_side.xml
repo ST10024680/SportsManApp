@@ -22,12 +22,12 @@
 
     <TextView
         android:id="@+id/textView11"
-        android:layout_width="300dp"
-        android:layout_height="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="LOGIN HERE"
         android:textAlignment="center"
-        android:textColor="#090808"
-        android:textSize="16sp"
+        android:textColor="#0C0C0C"
+        android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -38,12 +38,12 @@
 
     <TextView
         android:id="@+id/textView12"
-        android:layout_width="200dp"
-        android:layout_height="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:text="EMAIL"
         android:textAlignment="center"
-        android:textColor="#120E0E"
-        android:textSize="16sp"
+        android:textColor="#171212"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -98,23 +98,23 @@
     <Button
         android:id="@+id/btnSaveLogin"
         android:layout_width="300dp"
-        android:layout_height="50dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#007BFF"
         android:onClick="bookingPage"
         android:text="LOGIN"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textStyle="bold"
+        app:cornerRadius="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.857" />
+        app:layout_constraintTop_toBottomOf="@id/editLoginPassword" />
 
     <TextView
         android:id="@+id/textViewRegister"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:text="DON'T HAVE AN ACCOUNT? REGISTER HERE"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnSaveLogin" />
 
@@ -122,15 +122,15 @@
         android:id="@+id/textView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="16dp"
         android:text="A LONG LASTING SERVICE"
-        android:textColor="#FAF7F7"
+        android:textAlignment="center"
+        android:textColor="#F6EFEF"
         android:textSize="16sp"
         android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

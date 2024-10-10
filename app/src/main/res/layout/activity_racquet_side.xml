@@ -10,137 +10,120 @@
 
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="166dp"
-        android:layout_height="144dp"
-        android:layout_marginTop="72dp"
-
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="48dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/tennis" />
 
     <TextView
         android:id="@+id/textView18"
-        android:layout_width="200dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="RACQUET RESTRINGING"
         android:textAlignment="center"
-        android:textColor="#100D0D"
-        android:textSize="16sp"
+        android:textColor="#0C0C0C"
+        android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.055" />
+        app:layout_constraintTop_toBottomOf="@id/imageView5" />
 
     <TextView
         android:id="@+id/textView20"
-        android:layout_width="400dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="16dp"
         android:text="Racquet restringing is the process of replacing the strings on a tennis, badminton, or squash racquet. Over time, racquet strings can lose tension, break, or wear out due to regular use, impacting the performance of the racquet. Restringing involves removing the old strings and installing new ones, allowing players to maintain optimal control, power, and comfort in their game."
         android:textAlignment="center"
-        android:textAllCaps="true"
-        android:textColor="#090808"
+        android:textColor="#0C0C0C"
         android:textSize="16sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textStyle="italic"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.421" />
+        app:layout_constraintTop_toBottomOf="@id/textView18" />
 
     <TextView
         android:id="@+id/textView21"
-        android:layout_width="200dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:text="A LONG LASTING SERVICE"
-        android:textColor="#FBF6F6"
+        android:textAlignment="center"
+        android:textColor="#F6EFEF"
         android:textSize="16sp"
         android:textStyle="bold|italic"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.977" />
+        app:layout_constraintTop_toBottomOf="@id/btnRacquetConfirm" />
 
     <Button
         android:id="@+id/btnRacquetConfirm"
         android:layout_width="300dp"
         android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#007BFF"
         android:text="Confirm"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textStyle="bold"
+        app:cornerRadius="24dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.929" />
+        app:layout_constraintTop_toBottomOf="@id/textView29" />
 
     <TextView
         android:id="@+id/textView26"
-        android:layout_width="200dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:text="PRICE LIST"
         android:textAlignment="center"
-        android:textColor="#EF0404"
+        android:textColor="#EC0B0B"
         android:textStyle="bold|italic"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.603" />
+        app:layout_constraintTop_toBottomOf="@id/textView20" />
 
     <TextView
         android:id="@+id/textView27"
-        android:layout_width="400dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:text="RACQUET STRINGING         R150.00"
         android:textAlignment="center"
-        android:textAllCaps="false"
-        android:textColor="#121010"
-        android:textSize="16sp"
+        android:textColor="#171212"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.653" />
+        app:layout_constraintTop_toBottomOf="@id/textView26" />
 
     <TextView
         android:id="@+id/textView28"
-        android:layout_width="400dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:text="GRIP REPLACEMENT IS FOR FREE ONLY WHEN YOU BOUGHT THE GRIP IN OUR STORE OR ANY OTHER SPORTSMANS WAREHOUSE STORE"
         android:textAlignment="center"
-        android:textAllCaps="false"
-        android:textColor="#121010"
-        android:textSize="16sp"
+        android:textColor="#171212"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.751" />
+        app:layout_constraintTop_toBottomOf="@id/textView27" />
 
     <TextView
         android:id="@+id/textView29"
-        android:layout_width="400dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:text="AND REMEMBER THE PRICE OF THE STRINGS DIFFER DUE TO THEIR BRAND AND QUALITY"
         android:textAlignment="center"
-        android:textAllCaps="false"
-        android:textColor="#121010"
-        android:textSize="16sp"
+        android:textColor="#171212"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.842" />
+        app:layout_constraintTop_toBottomOf="@id/textView28" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
