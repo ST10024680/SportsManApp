@@ -28,17 +28,12 @@ class ConfirmationSide : AppCompatActivity() {
         textViewConfirm = findViewById(R.id.textViewConfirm)
 
         btnClickConfirm.setOnClickListener {
-            // Fetch entries from the database and display them
-            val entries = dbHelper.getAllData()
-            if (entries.isNotEmpty()) {
+
                 Toast.makeText(
                     this,
                     "You have placed an appointment for your item to be serviced at Sportsman's Warehouse",
                     Toast.LENGTH_SHORT
                 ).show()
-            } else {
-                textViewConfirm.text = "No entries found."
-            }
 
 
         }

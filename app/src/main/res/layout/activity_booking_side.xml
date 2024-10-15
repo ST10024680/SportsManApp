@@ -97,7 +97,7 @@ android:textColor="@android:color/white"
 app:cornerRadius="25dp"
 android:textSize="16sp"
 app:backgroundTint="@color/blueAccent"
-    app:icon="@drawable/ic_booking_icon"
+
     app:iconGravity="textStart"
     app:layout_constraintTop_toBottomOf="@id/checkBoxBoth"
     app:layout_constraintStart_toStartOf="parent"
