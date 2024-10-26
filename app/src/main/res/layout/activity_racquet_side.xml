@@ -65,14 +65,39 @@
         android:id="@+id/btnRacquetConfirm"
         android:layout_width="300dp"
         android:layout_height="40dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="116dp"
         android:backgroundTint="#007BFF"
         android:text="Confirm"
         android:textStyle="bold"
         app:cornerRadius="24dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textView29" />
+
+    <Button
+        android:id="@+id/btnChooseDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#007BFF"
+        android:text="Choose Date"
+        app:layout_constraintBottom_toTopOf="@id/btnRacquetConfirm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.2"
+        android:contentDescription="Choose date button" />
+
+    <TextView
+        android:id="@+id/textViewSelectedDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="No date selected"
+        android:textColor="#171212"
+        app:layout_constraintBottom_toTopOf="@id/btnChooseDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.1" />
 
     <TextView
         android:id="@+id/textView26"
